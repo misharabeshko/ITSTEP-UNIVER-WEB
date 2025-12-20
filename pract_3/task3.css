@@ -1,0 +1,94 @@
+.task_3 {
+    padding: 50px 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.cell {
+    position: relative;
+    overflow: hidden;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell.edge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cell.img:not(.edge) {
+    display: flex;
+}
+
+.cell.img:not(.edge) img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+
+.grid-3>.cell:nth-child(1) {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.grid-3>.cell:nth-child(3) {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.grid-3>.cell:nth-child(7) {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.grid-3>.cell:nth-child(9) {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cell.center {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(1.35);
+    z-index: 10;
+}
+
+.cell.center h3 {
+    margin: 0 0 15px;
+    font-size: 1.8rem;
+}
+
+.cell.center p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.cell.center button {
+    background-color: #F15048;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.cell.center button:hover {
+    background-color: #f23f35;
+}
