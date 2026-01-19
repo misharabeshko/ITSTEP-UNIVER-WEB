@@ -1,0 +1,72 @@
+.item-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background-color: #fa3a47;
+    color: white;
+    padding: 5px 35px;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.item-title {
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0 10px 0;
+    font-weight: bold;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.price-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.sale-price {
+    color: #fa3a47;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.regular-price {
+    color: #555;
+    font-weight: bold;
+}

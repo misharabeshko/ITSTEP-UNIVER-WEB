@@ -1,0 +1,40 @@
+.container {
+    padding: 20px 4vw;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+
+.products-grid {
+    display: grid;
+    gap: 20px;
+    row-gap: 40px;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* (800px - 1200px) */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* (менше 800px) */
+@media (max-width: 800px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
