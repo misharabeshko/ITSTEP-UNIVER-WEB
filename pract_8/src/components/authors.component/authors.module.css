@@ -1,0 +1,99 @@
+.authors-page {
+    background-color: #343a50;
+    color: white;
+    min-height: 100vh;
+    padding: 20px 40px;
+    font-family: sans-serif;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.author-row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #7a829c;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.author-info {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.details h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.details p {
+    margin: 0;
+    font-size: 12px;
+    color: #cbd2e0;
+}
+
+.posts-scroll-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    flex-grow: 1;
+}
+
+.posts-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.posts-scroll-container::-webkit-scrollbar-thumb {
+    background: #7a829c;
+    border-radius: 4px;
+}
+
+.post-card {
+    min-width: 140px;
+    height: 100px;
+    border: 1px solid #7a829c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.post-title {
+    font-size: 12px;
+    text-align: center;
+}
+
+.open-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.open-btn:hover {
+    background-color: white;
+    color: #343a50;
+}
